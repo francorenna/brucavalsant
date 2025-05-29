@@ -106,6 +106,17 @@
 }
 
 /* ----------------- Responsive ----------------- */
+.header-hamburger {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #bfa100;
+  cursor: pointer;
+  z-index: 1100;
+  margin-right: 12px;
+}
+
 @media (max-width: 700px) {
   .header {
     flex-direction: column;
@@ -120,12 +131,30 @@
     align-self: center;
   }
 
+  .header-hamburger {
+    display: block;
+    position: absolute;
+    top: 16px;
+    left: 12px;
+  }
+
   .header-nav {
+    position: fixed;
+    top: 0;
+    left: -100vw;
+    width: 70vw;
+    max-width: 320px;
+    height: 100vh;
+    background: #fffbe6;
+    box-shadow: 2px 0 16px rgba(0,0,0,0.08);
     flex-direction: column;
-    gap: 0.7rem;
-    width: 100%;
-    margin-bottom: 10px;
-    align-items: stretch;
+    gap: 1.5rem;
+    padding: 80px 24px 24px 24px;
+    transition: left 0.3s cubic-bezier(.4,0,.2,1);
+    z-index: 1050;
+  }
+  .header-nav.open {
+    left: 0;
   }
 
   .header-btn {
@@ -157,5 +186,22 @@
     border-radius: 50%;
     box-shadow: 0 2px 8px rgba(0,0,0,0.08);
     padding: 6px;
+  }
+}
+
+/* En desktop, el menú hamburguesa no se muestra y el nav es horizontal */
+@media (min-width: 701px) {
+  .header-hamburger {
+    display: none !important;
+  }
+  .header-nav {
+    position: static;
+    flex-direction: row;
+    height: auto;
+    background: none;
+    box-shadow: none;
+    padding: 0;
+    gap: 2rem;
+    width: auto;
   }
 }

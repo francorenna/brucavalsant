@@ -1,9 +1,13 @@
 .banner-container {
   position: relative;
   width: 100%;
-  max-width: 100vw;
+  max-width: 1100px;
+  margin: 32px auto 24px auto;
   overflow: hidden;
   min-height: 220px;
+  border-radius: 24px;
+  box-shadow: 0 6px 32px rgba(0,0,0,0.10), 0 1.5px 8px rgba(191,161,0,0.07);
+  background: linear-gradient(120deg, #fffbe6 0%, #fff 100%);
 }
 
 .banner-img {
@@ -16,6 +20,7 @@
   object-fit: cover;
   transition: opacity 0.5s;
   min-height: 220px;
+  border-radius: 24px;
 }
 
 .banner-img.active {
@@ -23,6 +28,7 @@
   opacity: 1;
   position: relative;
   z-index: 2;
+  border-radius: 24px;
 }
 
 .banner-overlay {
@@ -38,22 +44,32 @@
   align-items: center;
   z-index: 3;
   text-align: center;
-  padding: 1.5rem 1rem;
+  padding: 2.5rem 2rem;
+  border-radius: 24px;
 }
 
 .banner-overlay h2 {
   font-size: 2rem;
   margin-bottom: 0.5rem;
+  color: #bfa100;
+  text-shadow: 0 2px 8px rgba(255,224,102,0.12);
+  letter-spacing: 0.02em;
 }
 
 .banner-overlay p {
-  font-size: 1.1rem;
+  font-size: 1.15rem;
+  color: #333;
+  text-shadow: 0 1px 4px rgba(255,224,102,0.08);
 }
 
 /* Responsive para móviles */
 @media (max-width: 700px) {
   .banner-container {
     min-height: 140px;
+    max-width: 100vw;
+    margin: 12px 0 12px 0;
+    border-radius: 0;
+    box-shadow: none;
   }
   .banner-img,
   .banner-img.active {
@@ -61,6 +77,7 @@
     max-height: 200px;
     object-fit: cover;
     position: relative;
+    border-radius: 0;
   }
   .banner-overlay {
     justify-content: center;
@@ -75,6 +92,7 @@
     height: 100%;
     display: flex;
     flex-direction: column;
+    border-radius: 0;
   }
   .banner-overlay h2 {
     font-size: 1.2rem;
