@@ -5,7 +5,11 @@ import { faSearch, faShoppingCart } from "@fortawesome/free-solid-svg-icons";
 
 const Header = () => (
   <header className="header">
-    <img src="/logos-01.png" alt="Logo" className="header-logo" />
+    <img
+      src={process.env.PUBLIC_URL + "/logos-01.png"}
+      alt="Logo"
+      className="header-logo"
+    />
     <nav className="header-nav">
       <button className="header-btn">Ofertas</button>
       <button className="header-btn">Combos</button>

@@ -2,10 +2,10 @@ import React, { useEffect, useState, useRef } from "react";
 import "../Styles/Banner.css";
 
 const images = [
-  "/Promos/banner1.jpg",
-  "/Promos/banner2.jpg",
-  "/Promos/banner3.jpg",
-  "/Promos/banner4.jpg",
+  process.env.PUBLIC_URL + "/Promos/banner1.jpg",
+  process.env.PUBLIC_URL + "/Promos/banner2.jpg",
+  process.env.PUBLIC_URL + "/Promos/banner3.jpg",
+  process.env.PUBLIC_URL + "/Promos/banner4.jpg",
 ];
 
 function getRandomIndex(exclude) {

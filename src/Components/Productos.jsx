@@ -4,21 +4,21 @@ import "../Styles/Productos.css";
 const productos = [
   {
     tipo: "MARK",
-    imagen: "/Productos/MARK.png",
+    imagen: process.env.PUBLIC_URL + "/Productos/MARK.png",
     detalle: "Colchón de espuma de alta densidad. Revestido en tela de punto totalmente matelasseado de 20 mm que ofrece una grata sensación de suavidad. PESO MÁXIMO SUGERIDO 65 kg. Máximo comfort. Sommier | Opcional",
     espesores: ["18 cm / 80 x 190", "16 cm / 100 x 190"],
     precio: 300000,
   },
   {
     tipo: "REST",
-    imagen: "/Productos/REST.png",
+    imagen: process.env.PUBLIC_URL + "/Productos/REST.png",
     detalle: "Colchón de espuma de alta densidad. Revestido en tela de punto totalmente matelasseado de 20 mm que ofrece una grata sensación de suavidad. PESO MÁXIMO SUGERIDO 80 kg. Máximo comfort. Sommier | Opcional",
     espesores: ["18 cm / 80 x 190", "16 cm / 100 x 190"],
     precio: 350000,
   },
   {
     tipo: "RELAX",
-    imagen: "/Productos/RELAX.png",
+    imagen: process.env.PUBLIC_URL + "/Productos/RELAX.png",
     detalle: "Colchón de espuma de alta densidad. Revestido en tela de punto totalmente matelasseado de 20 mm que ofrece una grata sensación de suavidad. PESO MÁXIMO SUGERIDO 80 kg. Máximo comfort. Sommier | Opcional",
     espesores: ["18 cm / 80 x 190", "16 cm / 100 x 190"],
     precio: 450000,
