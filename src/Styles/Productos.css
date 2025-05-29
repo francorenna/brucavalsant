@@ -1,0 +1,134 @@
+.productos-lista {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  margin: 2rem auto;
+  max-width: 1200px;
+}
+
+.producto-card {
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 270px;
+  padding: 1.5rem 1.2rem 1.2rem 1.2rem;
+  transition: transform 0.18s, box-shadow 0.18s;
+}
+
+.producto-card:hover {
+  transform: translateY(-6px) scale(1.03);
+  box-shadow: 0 8px 32px rgba(255, 224, 102, 0.18);
+}
+
+.producto-img-wrap {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+  background: #fff;
+  border-radius: 16px;
+  padding: 0.5rem;
+}
+
+.producto-img {
+  width: 220px;
+  height: 220px;
+  object-fit: contain;
+  background: #fff;
+  border-radius: 12px;
+  padding: 0.5rem;
+  box-shadow: 0 1px 8px rgba(0,0,0,0.04);
+}
+
+.producto-info {
+  text-align: center;
+}
+
+.producto-tipo {
+  font-family: 'Montserrat', Arial, sans-serif;
+  font-size: 1.3rem;
+  color: #bfa100;
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+}
+
+.producto-detalle-toggle {
+  background: none;
+  border: none;
+  color: #1976d2;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.4em;
+  margin: 0 auto 0.5em auto;
+  transition: color 0.2s;
+}
+.producto-detalle-toggle:hover {
+  color: #bfa100;
+}
+.flecha {
+  display: inline-block;
+  transition: transform 0.3s;
+  font-size: 1.1em;
+}
+.flecha.abierta {
+  transform: rotate(180deg);
+}
+
+.producto-detalle-oculto {
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0;
+  font-size: 0.93rem;
+  transition: max-height 0.4s cubic-bezier(.4,0,.2,1), opacity 0.3s;
+  margin-bottom: 0.5em;
+}
+.producto-detalle-oculto.visible {
+  max-height: 300px;
+  opacity: 1;
+  margin-bottom: 0.7em;
+}
+
+.producto-detalle {
+  font-size: 0.93rem;
+  color: #444;
+  margin-bottom: 0.4rem;
+}
+
+.producto-espesores {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 0.5rem 0;
+  font-size: 0.92rem;
+  color: #666;
+}
+
+.producto-precio {
+  font-size: 1.2rem;
+  color: #1976d2;
+  font-weight: bold;
+  margin-bottom: 0.8rem;
+}
+
+.producto-btn {
+  background: #ffe066;
+  color: #7c6f00;
+  border: none;
+  border-radius: 18px;
+  padding: 0.5rem 1.4rem;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+  box-shadow: 0 1px 4px rgba(255, 224, 102, 0.10);
+}
+.producto-btn:hover {
+  background: #ffd60a;
+  color: #222;
+}
