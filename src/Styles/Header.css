@@ -14,7 +14,7 @@
 
 .header-nav {
   display: flex;
-  gap: 2rem; /* Más separación entre botones */
+  gap: 2rem;
 }
 
 .header-btn {
@@ -62,7 +62,7 @@
   border: 1px solid #ddd;
   outline: none;
   font-size: 1rem;
-  width: 180px; /* Más ancho */
+  width: 180px;
   transition: width 0.3s;
 }
 .header-search input:focus {
@@ -103,4 +103,46 @@
   font-size: 0.8rem;
   padding: 2px 6px;
   font-weight: bold;
+}
+
+/* ----------------- Responsive ----------------- */
+@media (max-width: 700px) {
+  .header {
+    flex-direction: column;
+    align-items: stretch;
+    padding: 0.7rem 4vw;
+  }
+
+  .header-logo {
+    height: 38px;
+    margin-bottom: 10px;
+    align-self: center;
+  }
+
+  .header-nav {
+    flex-direction: column;
+    gap: 0.7rem;
+    width: 100%;
+    margin-bottom: 10px;
+    align-items: stretch;
+  }
+
+  .header-btn {
+    width: 100%;
+    font-size: 1.1rem;
+    padding: 10px 0;
+  }
+
+  .header-search-cart {
+    flex-direction: column;
+    gap: 0.7rem;
+    width: 100%;
+    align-items: stretch;
+  }
+
+  .header-search input {
+    width: 100%;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+  }
 }
