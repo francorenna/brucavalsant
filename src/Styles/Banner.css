@@ -4,7 +4,8 @@
   max-width: 1100px;
   margin: 32px auto 24px auto;
   overflow: hidden;
-  min-height: 220px;
+  min-height: 320px;
+  height: 320px; /* Fijo para desktop */
   border-radius: 24px;
   box-shadow: 0 6px 32px rgba(0,0,0,0.10), 0 1.5px 8px rgba(191,161,0,0.07);
   background: linear-gradient(120deg, #fffbe6 0%, #fff 100%);
@@ -12,14 +13,13 @@
 
 .banner-img {
   width: 100%;
-  height: auto;
+  height: 320px; /* Igual que el contenedor */
   display: none;
   position: absolute;
   top: 0;
   left: 0;
   object-fit: cover;
   transition: opacity 0.5s;
-  min-height: 220px;
   border-radius: 24px;
 }
 
@@ -66,6 +66,7 @@
 @media (max-width: 700px) {
   .banner-container {
     min-height: 140px;
+    height: 140px;
     max-width: 100vw;
     margin: 12px 0 12px 0;
     border-radius: 0;
@@ -74,6 +75,7 @@
   .banner-img,
   .banner-img.active {
     min-height: 140px;
+    height: 140px;
     max-height: 200px;
     object-fit: cover;
     position: relative;

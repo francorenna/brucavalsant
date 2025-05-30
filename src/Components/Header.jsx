@@ -2,6 +2,8 @@ import React, { useState } from "react";
 import "../Styles/Header.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faSearch, faShoppingCart, faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
+import Button from "@mui/material/Button";
+import TextField from "@mui/material/TextField";
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -25,17 +27,96 @@ const Header = () => {
 
       {/* Menú de navegación */}
       <nav className={`header-nav${menuOpen ? " open" : ""}`}>
-        <button className="header-btn">Ofertas</button>
-        <button className="header-btn">Combos</button>
-        <button className="header-btn">Categorías</button>
+        <Button
+          variant="text"
+          color="warning"
+          className="header-btn"
+          sx={{
+            fontWeight: 700,
+            fontFamily: "Montserrat, Arial, sans-serif",
+            borderRadius: "24px",
+            px: 2.5,
+            py: 1,
+            color: "#bfa100",
+            '&:hover': {
+              background: "#fffbe6",
+              color: "#7c6f00",
+            }
+          }}
+        >
+          Ofertas
+        </Button>
+        <Button
+          variant="text"
+          color="warning"
+          className="header-btn"
+          sx={{
+            fontWeight: 700,
+            fontFamily: "Montserrat, Arial, sans-serif",
+            borderRadius: "24px",
+            px: 2.5,
+            py: 1,
+            color: "#bfa100",
+            '&:hover': {
+              background: "#fffbe6",
+              color: "#7c6f00",
+            }
+          }}
+        >
+          Combos
+        </Button>
+        <Button
+          variant="text"
+          color="warning"
+          className="header-btn"
+          sx={{
+            fontWeight: 700,
+            fontFamily: "Montserrat, Arial, sans-serif",
+            borderRadius: "24px",
+            px: 2.5,
+            py: 1,
+            color: "#bfa100",
+            '&:hover': {
+              background: "#fffbe6",
+              color: "#7c6f00",
+            }
+          }}
+        >
+          Categorías
+        </Button>
       </nav>
 
       <div className="header-search-cart">
         <div className="header-search">
-          <input type="text" placeholder="Buscar..." />
-          <span className="header-search-icon">
-            <FontAwesomeIcon icon={faSearch} />
-          </span>
+          <TextField
+            variant="filled"
+            size="small"
+            placeholder="Buscar..."
+            InputProps={{
+              disableUnderline: true,
+              style: {
+                background: "#fffbe6",
+                borderRadius: 24,
+                paddingRight: 36,
+                fontFamily: "Montserrat, Arial, sans-serif",
+              },
+              endAdornment: (
+                <span className="header-search-icon">
+                  <FontAwesomeIcon icon={faSearch} />
+                </span>
+              ),
+            }}
+            sx={{
+              '& .MuiFilledInput-root': {
+                borderRadius: '24px',
+                background: '#fffbe6',
+                boxShadow: '0 2px 8px rgba(255, 224, 102, 0.10)',
+              },
+              '& input': {
+                padding: '10px 0 10px 16px',
+              },
+            }}
+          />
         </div>
         <div className="header-cart">
           <span className="header-cart-icon">
