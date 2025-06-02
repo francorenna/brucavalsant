@@ -5,6 +5,7 @@ import Banner from "./Components/Banner.jsx";
 import Productos from "./Components/Productos.jsx";
 import Nosotros from "./Components/Nosotros.jsx";
 import Info from "./Components/Info.jsx";
+import Formulario from "./Components/Formulario.jsx";
 
 function App() {
   const [showIntro, setShowIntro] = useState(true);
@@ -20,6 +21,7 @@ function App() {
           <Productos />
           <Nosotros />
           <Info />
+          <Formulario />
         </>
       )}
     </>
