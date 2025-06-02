@@ -1,5 +1,5 @@
 import React from "react";
-import { FaMapMarkerAlt, FaTruck, FaMedal, FaPhoneAlt } from "react-icons/fa";
+import { FaMapMarkerAlt, FaTruck, FaMedal, FaPhoneAlt, FaWhatsapp, FaEnvelope } from "react-icons/fa";
 import "./../Styles/Info.css";
 
 const infoData = [
@@ -8,7 +8,7 @@ const infoData = [
     title: "Nuestra ubicación y capacidad",
     text: (
       <>
-        Nuestro depósito de <strong>500 m²</strong>, ubicado en Calle San Martín 3012 de Las Heras, Mendoza, es el corazón de nuestras operaciones. Desde aquí, gestionamos y distribuimos nuestros productos con la mayor eficiencia posible, asegurando que nuestros clientes reciban sus pedidos de manera oportuna y en perfectas condiciones.
+        Nuestro depósito de <strong>500 m²</strong>, ubicado en Las Heras / Mendoza, es el corazón de nuestras operaciones, zona de fácil acceso. Desde aquí, gestionamos y distribuimos nuestros productos con la mayor eficiencia posible, asegurando que nuestros clientes reciban sus pedidos de manera oportuna y en perfectas condiciones.
       </>
     ),
   },
@@ -26,7 +26,7 @@ const infoData = [
     title: "Calidad y confianza",
     text: (
       <>
-        En Bruca Valsant, nos comprometemos a brindar productos de la más alta calidad, respaldados por la experiencia y la reputación de la marca Natural Soft. Nuestro equipo está siempre dispuesto a ayudarte a encontrar las soluciones que mejor se adapten a tus necesidades, ya sea que estés buscando abastecer tu negocio o simplemente necesites asesoramiento experto.
+        En Brucavalsant, nos comprometemos a brindar productos de la más alta calidad, respaldados por la experiencia y la reputación de la marca Natural Soft. Nuestro equipo está siempre dispuesto a ayudarte a encontrar las soluciones que mejor se adapten a tus necesidades, ya sea que estés buscando abastecer tu negocio o simplemente necesites asesoramiento experto.
       </>
     ),
   },
@@ -36,6 +36,24 @@ const infoData = [
     text: (
       <>
         Estamos aquí para escucharte y ayudarte a encontrar lo que necesitas. No dudes en contactarnos para obtener más información sobre nuestros productos y servicios. Estamos ansiosos por trabajar contigo y ser parte de tu éxito.
+        <div className="info-contact-icons">
+          <a
+            href="https://wa.me/5492614161871"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="WhatsApp"
+            className="info-contact-link"
+          >
+            <FaWhatsapp className="info-contact-icon whatsapp" />
+          </a>
+          <a
+            href="mailto:brucavalsant@gmail.com"
+            aria-label="Email"
+            className="info-contact-link"
+          >
+            <FaEnvelope className="info-contact-icon email" />
+          </a>
+        </div>
       </>
     ),
   },
