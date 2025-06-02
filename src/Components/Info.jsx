@@ -26,7 +26,7 @@ const infoData = [
     title: "Calidad y confianza",
     text: (
       <>
-        En Brucavalsant, nos comprometemos a brindar productos de la más alta calidad, respaldados por la experiencia y la reputación de la marca Natural Soft. Nuestro equipo está siempre dispuesto a ayudarte a encontrar las soluciones que mejor se adapten a tus necesidades, ya sea que estés buscando abastecer tu negocio o simplemente necesites asesoramiento experto.
+        En Bruca Valsant, nos comprometemos a brindar productos de la más alta calidad, respaldados por la experiencia y la reputación de la marca Natural Soft. Nuestro equipo está siempre dispuesto a ayudarte a encontrar las soluciones que mejor se adapten a tus necesidades, ya sea que estés buscando abastecer tu negocio o simplemente necesites asesoramiento experto.
       </>
     ),
   },
